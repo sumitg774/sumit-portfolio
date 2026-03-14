@@ -4,6 +4,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Set current year
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
     /* 1. Mobile Menu Toggle */
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
